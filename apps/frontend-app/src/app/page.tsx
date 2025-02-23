@@ -1,5 +1,6 @@
 'use client';
 import styled from 'styled-components';
+import { TestingComponent } from '@wbarahona/testing-component';
 
 const StyledPage = styled.div`
   .page {
@@ -17,10 +18,7 @@ export default function Index() {
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
-              Welcome frontend-app 👋
-            </h1>
+            <TestingComponent />
           </div>
 
           <div id="hero" className="rounded">
