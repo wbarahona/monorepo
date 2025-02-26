@@ -42,6 +42,39 @@ Or if you want to run it in production mode
 npx nx serve api --configuration=production
 ```
 
+To serve the api app
+first you need to install `jdk` and `@openapitools/openapi-generator-cli` by running
+
+```sh
+brew install openjdk@11
+```
+
+then run
+
+```sh
+sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+```
+
+then you can try
+
+```sh
+java -version
+```
+
+the java version should be returned
+
+now we need to install `@openapitools/openapi-generator-cli` globally, run:
+
+```sh
+npm i -g @openapitools/openapi-generator-cli
+```
+
+then finally run the openapi generator:
+
+```sh
+npm run backend-app
+```
+
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
 
 [More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)

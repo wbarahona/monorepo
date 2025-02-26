@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "frontend-app": "nx dev frontend-app",
-    "api": "nx run api:serve"
+    "api": "nx run api:serve",
+    "generate-openapi": "npx openapi-generator-cli generate -i apps/api/src/api.yaml -g typescript-fetch -o apps/api/dist/openapi",
+    "backend-app": "npm run generate-openapi && npm run api"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +40,7 @@
     "@nx/web": "20.4.6",
     "@nx/webpack": "^20.4.6",
     "@nx/workspace": "20.4.6",
+    "@openapitools/openapi-generator-cli": "^2.16.3",
     "@playwright/test": "^1.36.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@rollup/plugin-url": "^8.0.2",

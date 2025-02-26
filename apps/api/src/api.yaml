@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Simple API
+  version: 1.0.0
+paths:
+  /simple:
+    get:
+      summary: Get a simple response
+      operationId: getSimple
+      responses:
+        '200':
+          description: A simple response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'This is a simple response!'
