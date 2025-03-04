@@ -3,10 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "frontend-app": "nx dev frontend-app",
-    "api": "nx run api:serve",
-    "generate-openapi": "npx openapi-generator-cli generate -i apps/api/src/api.yaml -g typescript-fetch -o apps/api/dist/openapi",
-    "backend-app": "npm run generate-openapi && npm run api"
+    "frontend-app": "nx dev frontend-app"
   },
   "private": true,
   "dependencies": {
