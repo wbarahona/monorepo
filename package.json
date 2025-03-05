@@ -4,7 +4,13 @@
   "license": "MIT",
   "scripts": {
     "frontend-app": "nx dev frontend-app",
-    "backend-app": "nx run api:serve"
+    "backend-app": "nx run api:serve",
+    "frontend-app:build": "nx build frontend-app",
+    "frontend-app:start": "nx start frontend-app",
+    "frontend:start": "npm run frontend-app:build && npm run frontend-app:start",
+    "backend-app:build": "nx build api",
+    "backend-app:start": "node dist/apps/api/main.js",
+    "backend:start": "npm run backend-app:build && npm run backend-app:start"
   },
   "private": true,
   "dependencies": {

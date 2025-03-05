@@ -1,10 +1,11 @@
 export default {
   displayName: 'testing-component',
-  preset: '../../jest.preset.js',
+  preset: '../../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/packages/testing-component',
+  coverageDirectory:
+    '../../../coverage/packages/ui-components/testing-component',
 };

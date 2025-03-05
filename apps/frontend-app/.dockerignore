@@ -1,0 +1,15 @@
+node_modules
+.next
+dist
+.git
+.github
+.nx
+.vscode
+*.md
+.env*
+!.env.example
+.eslintrc*
+.prettierrc*
+.editorconfig
+jest.config.*
+coverage

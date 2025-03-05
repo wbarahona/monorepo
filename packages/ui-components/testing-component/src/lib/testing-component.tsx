@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledTestingComponent = styled.div`
-  color: #333;
+  color: pink;
 `;
 export function TestingComponent() {
   return (

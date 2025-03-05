@@ -1,7 +1,7 @@
 {
   "name": "testing-component",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/testing-component/src",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/ui-components/testing-component/src",
   "projectType": "library",
   "tags": [],
   "targets": {

@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import { TestingComponent } from '@wbarahona/testing-component';
+import { TestingComponent } from '@wbarahona/ui-components/testing-component';
 
 const StyledPage = styled.div`
   .page {
